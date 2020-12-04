@@ -104,16 +104,14 @@ window.onload = function () {
     document.getElementById("loader").style.display = 'none';
     document.getElementById("loaded").classList -= 'w3-hide';
 }
+
+document.body.onscroll = function() {changeLanding()};
+
 function changeLanding() {
     var landing_one = document.getElementById("landing-one");
     var landing_two = document.getElementById("landing-two");
-    if (landing_two.className  === "w3-hide") {
         landing_one.className = "w3-hide";
         landing_two.className = "w3-show";
-    } else {
-        landing_two.className = "w3-hide";
-        landing_one.className = "w3-show";
-    }
 }
 </script>
 </html>
